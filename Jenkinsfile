@@ -11,5 +11,15 @@ pipeline {
                 sh 'python test.py'
             }
         }
+        stage('package') {
+            steps {
+                sh 'echo "Running Package stage"'
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh 'echo "Running Deploy stage"'
+            }
+        }
     }
 }
